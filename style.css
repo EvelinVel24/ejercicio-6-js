@@ -1,0 +1,27 @@
+/* Estilos básicos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Estilos para el formulario de tareas */
+#formulario {
+    display: none; /* Ocultar el formulario por defecto */
+    margin-bottom: 20px;
+}
+
+/* Estilos para la tabla de tareas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
