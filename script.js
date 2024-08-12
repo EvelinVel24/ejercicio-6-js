@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para agregar una tarea
     addTaskBtn.addEventListener('click', () => {
+        console.log('Botón de agregar tarea clickeado'); // Verifica si se detecta el clic
         const tarea = nuevaTarea.value.trim();
         if (tarea) {
             tareas.push({ tarea }); // Añadir tarea al array
@@ -53,8 +54,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargar las tareas iniciales en la tabla
     updateTaskTable();
 });
-
-
-
 
 
