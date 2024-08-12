@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleFormBtn = document.getElementById('toggleFormBtn');
     const formulario = document.getElementById('formulario');
-    const form = document.getElementById('form');
+    const addTaskBtn = document.getElementById('addTaskBtn');
     const nuevaTarea = document.getElementById('nuevaTarea');
     const cuerpoTabla = document.getElementById('cuerpo-tabla');
 
@@ -18,14 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Función para agregar una tarea
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
+    addTaskBtn.addEventListener('click', () => {
         const tarea = nuevaTarea.value.trim();
         if (tarea) {
             tareas.push({ tarea }); // Añadir tarea al array
             updateTaskTable();
             nuevaTarea.value = '';
-            formulario.classList.add('d-none');
+            formulario.classList.add('d-none'); // Ocultar el formulario después de agregar la tarea
         }
     });
 
@@ -54,4 +53,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cargar las tareas iniciales en la tabla
     updateTaskTable();
 });
+
+
+
+
 

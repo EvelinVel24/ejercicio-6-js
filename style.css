@@ -16,12 +16,28 @@ table {
     border-collapse: collapse;
 }
 
-table, th, td {
-    border: 1px solid black;
-}
-
+/* Solo línea horizontal gris debajo de los encabezados y filas */
 th, td {
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #ccc; /* Línea horizontal gris */
 }
+
+/* Eliminar borde superior del encabezado */
+thead th {
+    border-top: none;
+    background-color: #f9f9f9; /* Fondo gris claro para los encabezados */
+}
+
+/* Eliminar borde inferior del encabezado */
+thead th {
+    border-bottom: none;
+}
+
+/* Asegurar que solo haya la línea horizontal en la parte inferior de cada fila */
+table thead th {
+    border-bottom: 1px solid #ccc; /* Línea horizontal gris en la parte inferior de los encabezados */
+}
+
+
 
