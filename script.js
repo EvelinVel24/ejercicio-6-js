@@ -5,6 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const nuevaTarea = document.getElementById('nuevaTarea');
     const cuerpoTabla = document.getElementById('cuerpo-tabla');
 
+      // Verifica los elementos en la consola
+    console.log('toggleFormBtn:', toggleFormBtn);
+    console.log('formulario:', formulario);
+    console.log('addTaskBtn:', addTaskBtn);
+    console.log('nuevaTarea:', nuevaTarea);
+    console.log('cuerpoTabla:', cuerpoTabla);
+
     // Lista inicial de tareas
     let tareas = [
         { tarea: "Pintar la fachada de la casa" },
