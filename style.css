@@ -1,43 +1,91 @@
-/* Estilos básicos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
 }
 
-/* Estilos para el formulario de tareas */
-#formulario {
-    display: none; /* Ocultar el formulario por defecto */
+h1 {
     margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    align-self: center; 
 }
 
-/* Estilos para la tabla de tareas */
+#toggleFormBtn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px; 
+}
+
+#taskForm {
+    display: none;
+    margin-bottom: 20px;
+    width: 300px; 
+}
+
+#taskInput {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+#taskForm button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%; 
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-/* Solo línea horizontal gris debajo de los encabezados y filas */
-th, td {
-    padding: 10px;
+    margin-top: 20px;
     text-align: left;
-    border-bottom: 1px solid #ccc; /* Línea horizontal gris */
+
 }
 
-/* Eliminar borde superior del encabezado */
-thead th {
-    border-top: none;
-    background-color: #f9f9f9; /* Fondo gris claro para los encabezados */
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-/* Eliminar borde inferior del encabezado */
-thead th {
-    border-bottom: none;
+th, td {
+    padding: 15px;
+    font-size: 16px;
 }
 
-/* Asegurar que solo haya la línea horizontal en la parte inferior de cada fila */
-table thead th {
-    border-bottom: 1px solid #ccc; /* Línea horizontal gris en la parte inferior de los encabezados */
+th {
+    background-color: #f8f9fa;
+    color: #333;
 }
 
+#taskList tr td:last-child {
+    text-align: center;
+}
 
+#taskList button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
+#taskList button:hover {
+    background-color: #c82333;
+}
